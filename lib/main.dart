@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'package:allwork/injection.dart';
+import 'package:injectable/injectable.dart';
+
 void main() {
+  configureInjection(Environment.prod);
   runApp(MyApp());
 }
 
@@ -12,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Text('All work'),
+      home: const Scaffold(body: Text('All work')),
     );
   }
 }
