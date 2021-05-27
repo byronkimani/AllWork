@@ -1,5 +1,5 @@
 import 'package:allwork/presentation/core/theme.dart';
-import 'package:allwork/presentation/sign_in/welcome_page.dart';
+import 'package:allwork/presentation/sign_in/pages/welcome_page.dart';
 import 'package:flutter/material.dart';
 
 class AppWidget extends StatelessWidget {
@@ -9,7 +9,7 @@ class AppWidget extends StatelessWidget {
       title: 'AllWork',
       debugShowCheckedModeBanner: false,
       theme: apptheme,
-      home: SignInPage(),
+      home: WelcomePage(),
     );
   }
 }
